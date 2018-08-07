@@ -118,7 +118,7 @@ router.post('/reset_password', async (req, res) => {
 
     res.send();
 
-  } catch(err) {
+  } catch (err) {
     console.log(err);
     res.status(400).send({ error: 'Error on reset password, try again' })
   }
