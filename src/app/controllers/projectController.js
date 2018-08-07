@@ -1,5 +1,5 @@
-const express = require('express');
-const authMiddleware = require('../middlewares/auth');
+import express from 'express';
+import authMiddleware from '../middlewares/auth';
 
 const router = express.Router();
 
@@ -12,4 +12,4 @@ router.get('/', (req, res) => {
   })
 });
 
-module.exports = app => app.use('/projects', router);
+export default (app) => app.use('/projects', router);

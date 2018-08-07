@@ -1,7 +1,7 @@
-const jwt = require('jsonwebtoken');
-const authConfig = require('../../config/auth.json');
+import jwt from 'jsonwebtoken';
+import authConfig from '../../config/auth.json';
 
-module.exports = (req, res, next) => {
+export default (req, res, next) => {
   const authHeader = req.headers.authorization;
 
   if (!authHeader)
@@ -24,4 +24,4 @@ module.exports = (req, res, next) => {
     req.userId = decoded.id;
     return next();
   });
-};
+}
