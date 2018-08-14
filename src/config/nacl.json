@@ -1,0 +1,37 @@
+[
+  {
+    "group": "admin",
+    "permissions": [
+      {
+        "resource": "/projectss",
+        "methods": ["GET"],
+        "action": "allow"
+      }
+    ]
+  },
+  {
+    "group": "user",
+    "permissions": [
+      {
+        "resource": "/projectss",
+        "methods": ["GET"],
+        "action": "allow"
+      }
+    ]
+  },
+  {
+    "group": "guest",
+    "permissions": [
+      {
+        "resource": "",
+        "methods": ["GET"],
+        "action": "allow"
+      },
+      {
+        "resource": "/projects",
+        "methods": ["GET"],
+        "action": "allow"
+      }
+    ]
+  }
+]
